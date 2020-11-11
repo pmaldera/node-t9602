@@ -18,7 +18,6 @@
   "dependencies": {
     "node-addon-api": "^3.0.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "license": "MIT",
   "keywords": [
     "T9602",
