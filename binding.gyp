@@ -4,8 +4,8 @@
         "cflags!": [ "-fno-exceptions -nostartfiles" ],
         "cflags_cc!": [ "-fno-exceptions" ],
         "sources": [
-            "addon.cc",
-            "t9602.cc",
+            "src/addon.cc",
+            "src/t9602.cc",
         ],
         'include_dirs': [
             "<!@(node -p \"require('node-addon-api').include\")"

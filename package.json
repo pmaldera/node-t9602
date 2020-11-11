@@ -1,15 +1,33 @@
 {
-  "name": "object_wrap",
-  "version": "0.0.0",
-  "description": "Node.js Addons Example #6",
-  "main": "addon.js",
+  "author": "Pierre MALDERA",
+  "name": "node-t9602",
+  "description": "Reads data from T9602 humidity and temperature sensor on Rasperry Pi.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/pmaldera/node-t9602"
+  },
+  "scripts": {
+    "install": "node-gyp configure",
+    "postinstall": "node-gyp build"
+  },
+  "main": "./lib",
   "private": true,
   "gypfile": true,
   "engines": {
     "node": "~10 >=10.20 || >=12.17"
   },
   "dependencies": {
-    "bindings": "~1.2.1",
     "node-addon-api": "^3.0.0"
-  }
+  },
+  "license": "MIT",
+  "keywords": [
+    "T9602",
+    "sensor",
+    "temperature",
+    "humidity",
+    "raspberry",
+    "raspberry pi",
+    "rpi",
+    "amphenol"
+  ]
 }

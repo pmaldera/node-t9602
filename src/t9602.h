@@ -13,7 +13,10 @@
 class T9602 : public Napi::ObjectWrap<T9602> {
     public:
         static Napi::Object Init(Napi::Env env, Napi::Object exports);
+        static const float temperatureErrorValue;
+        static const float humidityErrorValue;
         T9602(const Napi::CallbackInfo& info);
+        ~T9602();
 
     private:
         Napi::Value getTemperature(const Napi::CallbackInfo& info);
@@ -21,9 +24,6 @@ class T9602 : public Napi::ObjectWrap<T9602> {
         
         int address;
         int fd;
-        const int temperatureErrorValue = 9999;
-        const int humidityErrorValue = 9999;
-        const int I2C_SLAVE = 0x0703;
 };
 
 #endif
